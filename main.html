@@ -21,11 +21,11 @@
   <body>
     <ion-app>
       <ion-header>
-        <ion-toolbar color="green">
+        <ion-toolbar>
           <ion-title>BMI Calculator</ion-title>
         </ion-toolbar>
       </ion-header>
-      <ion-content>
+      <ion-content class="ion-padding">
         <ion-item>
           <ion-label position="stacked">Your Height (m)</ion-label>
           <ion-input id="height-input"></ion-input>
@@ -34,7 +34,16 @@
           <ion-label position="stacked">Your Weight (kg)</ion-label>
           <ion-input id="weight-input"></ion-input>
         </ion-item>
-        <ion-button on fill="outline" color="primary">Calculate IBM</ion-button>
+        <ion-grid class="ion-text-center ion-margin">
+          <ion-row>
+            <ion-col>
+              <ion-button id="calButton">Calculate IBM</ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button id="resetButton">Reset</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
         <div id="result"></div>
       </ion-content>
     </ion-app>
